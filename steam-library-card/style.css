@@ -56,7 +56,7 @@ body {
     content: "";
     width: 100%;
     height: 100%;
-    background: #ffffff18;
+    background: linear-gradient(#ffffff08, #ffffff20);
     top: -60%;
     left: 40%;
     transform: rotateZ(120deg);
@@ -75,7 +75,7 @@ body {
   }
 
   &:hover > .shine:before {
-    background: #ffffff40;
+    background: linear-gradient(#ffffff00, #ffffff40);
     transform: rotateX(8deg) scale(1.85) rotateZ(120deg);
     filter: blur(5px);
   }
