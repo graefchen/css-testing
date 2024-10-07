@@ -33,7 +33,6 @@ body {
 
   transform-style: preserve-3d;
   perspective: 600px;
-
   cursor: pointer;
 
   > * {
@@ -41,34 +40,63 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-
     transition-property: box-shadow, opacity, filter, transform;
-    transition-duration: 0.75s;
-
-    &:first-child {
-      z-index: 100;
-      box-shadow: 0px 5px 15px #00000066;
-    }
-
-    &:not(:first-child) {
-      opacity: 0;
-      z-index: -1;
-      pointer-events: none;
-      transform: scaleY(0.8) scaleX(0.85) translateY(25%);
-      filter: blur(40px) brightness(1.75);
-    }
+    transition-duration: 0.2s;
   }
 
-  &:hover > * {
-    &:first-child {
-      transform: rotateX(8deg) scale(1.05);
-      box-shadow: 0px 15px 15px #00000066;
-    }
+  > .shine {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 1;
+  }
 
-    &:not(:first-child) {
-      opacity: 1;
-      transform: rotateX(8deg) scaleY(0.8) scaleX(0.85) translateY(25%);
-      filter: blur(40px) brightness(1.75);
-    }
+  > .shine:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ffffff18;
+    top: -60%;
+    left: 40%;
+    transform: rotateZ(120deg);
+    filter: blur(5px);
+
+    transition-property: background, box-shadow, opacity, filter, transform;
+    transition-duration: 0.2s;
+  }
+
+  > .thumbnail {
+    box-shadow: 0px 5px 15px #00000066;
+  }
+
+  &:hover > .shine {
+    transform: rotateX(8deg) scale(1.05);
+  }
+
+  &:hover > .shine:before {
+    background: #ffffff40;
+    transform: rotateX(8deg) scale(1.85) rotateZ(120deg);
+    filter: blur(5px);
+  }
+
+  &:hover > .thumbnail {
+    z-index: 0;
+    transform: rotateX(8deg) scale(1.05);
+    box-shadow: 0px 15px 15px #00000066;
+  }
+
+  > .background {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+    transform: scaleY(0.8) scaleX(0.85) translateY(25%);
+    filter: blur(40px) brightness(1.75);
+  }
+
+  &:hover > .background {
+    opacity: 1;
+    transform: rotateX(8deg) scaleY(0.8) scaleX(0.85) translateY(25%);
+    filter: blur(40px) brightness(1.75);
   }
 }
