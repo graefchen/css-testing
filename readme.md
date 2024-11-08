@@ -11,13 +11,13 @@ Just an repository of me testing css style stuff and creating stuff.
 - Metro Last Light picture from https://www.steamgriddb.com/grid/350918 and renamed to `MetroLL.png`
 - Guide to create the 3d effects of the card: https://kushagra.dev/blog/css-only-3d-card/
 
-### Gradient Text
+### [Gradient Text](/gradient-text/)
 
 ![image](img/gradient-text.PNG)
 
 - gradient code from: https://www.30secondsofcode.org/css/s/25-css-gradients/
 
-## Animal Crossing New Leaf Colours
+## [Animal Crossing New Leaf Colours](/animal-crossing-new-leaf-colors/)
 
 - Animal Crossing New Leaf Palette taken from:
   - https://docs.google.com/spreadsheets/d/1Th17nnkMpXDmnEenHSH-d66DdzttANLwtlvXfFhS-kw
