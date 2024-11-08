@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<style>
+  body {
+    padding: 2rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid {
+    width: min(720px, 100%);
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .grid>* {
+    aspect-ratio: 1;
+  }
+</style>
+
+<body>
+  <div id="fl" class="grid" gap="10" cols="3"></div>
+</body>
+<script>
+  function h(tag, className, txt = "") {
+    const el = document.createElement(tag)
+    el.classList.add(className);
+    el.innerHTML = txt;
+    return el
+  }
+  const fl = document.getElementById("fl");
+  const array = ["pink", "red", "orange", "peach", "purple", "fuchsia", "brown", "yellow", "indigo", "dark-green", "blue", "dark-green", "light-green", "slate-blue", "ocean-blue", "green"];
+
+  array.forEach(element => {
+    for (let index = 1; index <= 9; index++) {
+      const className = `${element}-${index * 100}`;
+      fl.appendChild(h("div", className));
+    }
+  });
+
+  for (let index = 1; index <= 15; index++) {
+    const className = `grayscale-${index}`;
+    fl.appendChild(h("div", className));
+  }
+
+</script>
+
+</html>

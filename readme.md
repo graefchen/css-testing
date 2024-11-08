@@ -16,3 +16,11 @@ Just an repository of me testing css style stuff and creating stuff.
 ![image](img/gradient-text.PNG)
 
 - gradient code from: https://www.30secondsofcode.org/css/s/25-css-gradients/
+
+## Animal Crossing New Leaf Colours
+
+- Animal Crossing New Leaf Palette taken from:
+  - https://docs.google.com/spreadsheets/d/1Th17nnkMpXDmnEenHSH-d66DdzttANLwtlvXfFhS-kw
+  - https://gist.github.com/Wunkolo/e0e1c8fef98dfcee806b
+
+![image](img/animal-crossing-new-leaf-colors.PNG)
